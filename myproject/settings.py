@@ -31,7 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'hello.apps.HelloConfig', # This is the app we created and added to the list of installed apps
+    'hello.apps.HelloConfig', # This is the app we hello created and added to the list of installed apps
+    'newyear.apps.NewyearConfig', # This is the new year app we created and added to the list of installed apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

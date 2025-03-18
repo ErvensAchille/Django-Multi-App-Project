@@ -75,3 +75,16 @@
 
 # def index(request):
 #     return HttpResponse("Hello, world.")
+
+
+# New Year App:
+
+# So I will now go ahead and create a new app. And I'll call the app newyear. And I can do that by some 
+# writing python manage.py startapp new year.  If I type ls,  you'll see that not only do I have a hello directory that 
+# represents the hello app, I now have this newyear directory that represents the fact that this is a new app called newyear. 
+
+# As with before, I'll need to go into settings.py inside of my project directory and add newyear as an installed app. 
+# This is now a new app that exists in my web application, so it too now needs to be a new installed app. I need to go into urls.py for 
+# myproject. And just as before, I had a path saying when I go to /hello, then you should go to all the URLs for the hello app, let me
+# add a new path that says that if I go to my application /newyear, well then you should go to all of URLs for the newyear file, go 
+# to newyear.urls, representing the urls.py file inside of the newyear app. 

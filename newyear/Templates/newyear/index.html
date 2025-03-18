@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>is it New years</title>
+</head>
+<body>
+
+    {% if newyear %}
+        <h1>Yes</h1>
+    {% else %}
+        <h1>NO</h1>
+    {% endif %}
+
+    <!-- And inside Django's templating language-- and again, you'd only know this by reading Django's documentation-- 
+     just as we used double curly braces to say plug in the value of a variable here, the syntax for logic inside of a Django 
+     template, like conditions, is curly brace percent sign. So we use curly brace percent sign, some logical statement, and 
+     then percent sine curly brace to include any kind of logic. And the logic in this case is an if statement.  We'll say if 
+     newyear-- newyear is the name of that variable that I passed into this template. And if it is a new year, then I want to display 
+     an h1 that just says, YES. And then else, also inside of curly braces and percent signs, I want a big h1 that just says, NO.
+     So if it's the new year, then yes. Else, no. And then Django also requires me to give an endif tag to say this is the
+     end of the if statement. Unlike Python itself that uses indentation to denote when the if statement is beginning and ending, 
+     in Django, the indentation is optional inside of the template. But in order to distinguish when the if statement is happening
+    from when the if statement is over, we need this endif tag at the very end.   -->
+</body>
+</html>

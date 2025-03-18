@@ -9,7 +9,7 @@ urlpatterns = [
     path('brian', views.brian, name ='brian'),
     path('david', views.david, name ='david'),
     path('<str:name>', views.greet, name ='greet')
-
+# the url, the view function, and the name of the url
 ]
 
 # So I'll go ahead and go into the hello directory. And I'll create a new file inside of the hello directory called you urls.py. And what urls.py needs is, it needs to define a variable called urlpatterns, which will be a list of all of the allowable URLs that can be accessed for this particular app. 

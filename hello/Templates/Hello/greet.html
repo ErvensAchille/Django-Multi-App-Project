@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello, {{name}}</h1>
+</body>
+</html>
+
+<!-- the reason why all this is happening, the way we're getting to that final position is because you urls says that when 
+ I have a URL that just is a string like someone's name, we'll call the greet function. 
+
+The greet function inside of views.py is taking the name as an argument, rendering the greet.html template, and passing in 
+that name as part of the context, part of what the template has access to. And inside of greet.html, here is the actual HTML file. 
+Here is where we then plug in the value of name. 
+he reason for all of these various different files is to help keep things separate, to have one file that is just responsible 
+for URLs and directing people to what should happen when those URLs are clicked. Then we have one file, views.py, that is entirely 
+responsible for deciding, , on this particular view what template should be rendered, what information should be passed in this context. 
+And then I separately have a file for each of my HTML templates that are saying what does the page actually look like. 
+And so if you start to begin to think about the separation of components inside of a web application, it can help to 
+make the structure of a Django application a little bit clearer.
+
+So we've now been able to use the Django templating language to put variables inside of our HTML templates, to be able to 
+create an infinite number of different routes where I can visit slash hello slash some name in order to display hello to that 
+person's name.
+ -->
